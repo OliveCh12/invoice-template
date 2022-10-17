@@ -1,0 +1,109 @@
+.invoice {
+    width: 210mm;
+    height: 297mm;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid rgba(1, 1, 1, 0.1);
+
+    @media print {
+        font-size: 11pt;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        @include padding-default;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+    }
+
+    &__sender-infos {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    &__sub-header {
+        display: flex;
+        justify-content: space-between;
+        // background-color: lighten($color-primary, 40%);
+        border-bottom: 1px solid rgba(black, 0.1);
+        @include padding-default;
+
+        &-section {
+            border: 1px solid rgba(black, 0.1);
+            padding: 1rem;
+            border-radius: $border-radius;
+        }
+        .invoice__receiver-infos {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            &--right {
+                text-align: right;
+            }
+
+            strong {
+                color: $color-primary;
+            }
+        }
+
+        .invoice__receiver-date {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+
+    &__body {
+        @include padding-default;
+        flex: 1;
+
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        @include padding-default;
+        gap: 2rem;
+        color: #fff;
+        background-color: $color-primary;
+        font-size: 10pt;
+
+        &-section {
+            // background-color: red;
+            flex: 1 0;
+        }
+
+        h4, h5 {
+            margin-top: 0;
+        }
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+
+
+    &__title {
+        font-weight: 600;
+    }
+
+    &__description {
+        font-size: 0.8em;
+        opacity: 0.7;
+    }
+
+    &__total {
+        font-size: 1.2em;
+        font-weight: 600;
+        // background-color: rebeccapurple;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./styles/main.scss" lang="sass">
+</head>
+
+<body>
+  <div class="invoice">
+    <!-- Invoice Header Section -->
+    <div class="invoice__header">
+      <div class="invoice__header-section">
+        <h3>Invoice Company</h3>
+      </div>
+      <div class="invoice__header-section">
+        <div class="invoice__sender-infos">
+          <span>Olivier CHEMLA</span>
+          <span>olivierchemla@gmail.com</span>
+          <span>8 rue de Metz</span>
+          <span>92000, Nanterre</span>
+          <span><strong>VAT No :</strong> 4328594054</span>
+        </div>
+      </div>
+    </div>
+    <div class="invoice__sub-header">
+      <div class="invoice__sub-header-section">
+        <div class="invoice__receiver-infos">
+          <span><strong>Allegis Group</strong></span>
+          <span>PSParis@gmail.com</span>
+          <span>8 rue Daru</span>
+          <span>75008, Paris</span>
+          <span><strong>VAT No :</strong> 4328594054</span>
+        </div>
+      </div>
+      <div class="invoice__sub-header-section">
+        <div class="invoice__receiver-infos invoice__receiver-infos--right">
+          <span class="invoice__receiver-date">
+            <small>Sending date:</small>
+            <strong>03/02/2023</strong>
+          </span>
+          <strong>↓</strong>
+          <span class="invoice__receiver-date">
+            <small>Due date:</small>
+            <strong>03/03/2023</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- Invoice Body Section -->
+    <div class="invoice__body">
+      <h4>Invoice : n° 032022N0012</h4>
+      <table>
+        <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Hours</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+        <tr>
+          <td class="item">
+            <span class="item__title">Développement Front-End</span>
+            <span class="item__description">Le développement web frontal correspond aux productions HTML, CSS et
+              JavaScript d’une page internet </span>
+          </td>
+          <td>23 d</td>
+          <td>172 h</td>
+          <td>15 345 €</td>
+        </tr>
+        <tr>
+          <td class="item">
+            <span class="item__title">UX / UI Design</span>
+            <span class="item__description">Le développement web frontal correspond aux productions HTML, CSS et
+              JavaScript d’une page internet </span>
+          </td>
+          <td>23 d</td>
+          <td>172 h</td>
+          <td>15 345 €</td>
+        </tr>
+        <!-- <tr>
+          <td class="item">
+            <span class="item__title">UX / UI Design</span>
+            <span class="item__description">Le développement web frontal correspond aux productions HTML, CSS et
+              JavaScript d’une page internet </span>
+          </td>
+          <td>23 d</td>
+          <td>172 h</td>
+          <td>15 345 €</td>
+        </tr>
+        <tr>
+          <td class="item">
+            <span class="item__title">Maintenance (Long)</span>
+            <span class="item__description">Le développement web frontal correspond aux productions HTML, CSS et
+              JavaScript d’une page internet </span>
+          </td>
+          <td>23 d</td>
+          <td>172 h</td>
+          <td>15 345 €</td>
+        </tr> -->
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="3">Total TTC</th>
+            <td class="total__price">21,000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <!-- Invoice Footer Section -->
+    <div class="invoice__footer">
+      <div class="invoice__footer-section">
+        <h4>Payments Method</h4>
+        <!-- <h5>Bank Transfer</h5> -->
+        <table class="table table--small">
+          <tbody>
+            <tr>
+              <td><strong>Account Name</strong></td>
+              <td>Olivier Chemla</td>
+            </tr>
+            <tr>
+              <td><strong>IBAN</strong></td>
+              <td>DE16 1001 1001 2628 8146 65</td>
+            </tr>
+            <tr>
+              <td><strong>BIC</strong></td>
+              <td>NTSBDEB1XXX</td>
+            </tr>
+            <tr>
+              <td><strong>BANK</strong></td>
+              <td>N26</td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+      <div class="invoice__footer-section">
+        <h4>Terms & Conditions</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sunt numquam eveniet consequatur amet
+          laudantium neque. Molestias, animi temporibus.</p>
+        <h4>Thanks you for your confiance</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias et architecto, atque praesentium ullam ipsa.
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

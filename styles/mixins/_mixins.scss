@@ -1,0 +1,9 @@
+@mixin padding-default {
+    @media screen {
+        padding: 1rem;
+    }
+
+    @media print {
+        padding: 0.5cm;
+    }
+}
